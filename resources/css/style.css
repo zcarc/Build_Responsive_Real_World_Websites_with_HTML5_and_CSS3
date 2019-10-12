@@ -40,23 +40,103 @@ html {
     margin: 0 auto;
 }
 
+section {
+    padding: 80px 0;
+}
+
+.box {
+    
+    padding: 1%;
+}
+
 /* ----- HEADINGS ----- */
-h1 {
-    margin: 0;
-    color: #fff;
-    font-size: 240%;
+
+h1,
+h2,
+h3 {
+    
     font-weight: 300;
+    
     
     /* 모두 대문자로 변환 */
     text-transform: uppercase;
-    
-    /* 글자 사이 간격 */
-    letter-spacing: 1px;
-    
-    word-spacing 4px: 
+ 
 }
 
+h1 {
+    
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    
+    /* 문자열 단위 간의 간격 (문자 간격) */
+    word-spacing 4px;
+    
+    /* 스펠링 단위 간의 간격 (자간) 참고: https://blog.naver.com/anedthh/221371517278 */
+    letter-spacing: 1px;
+    
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* ----- PARAGRAPHS ----- */
+
+.long-copy {
+    
+    line-height: 145%;
+    width: 70%;
+    
+    
+    /* 15%로 정한 이유는 width가 70%라서 100%로 맞춰야하기 때문이다. */
+    margin-left: 15%;
+    
+    
+    /* margin: 0 auto; */
+    
+}
+
+.box p {
+    
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/* ----- ICONS ----- */
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+
 /* ----- BUTTONS ----- */
+
 .btn:link,
 .btn:visited {
     display: inline-block;
